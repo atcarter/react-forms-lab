@@ -23,6 +23,7 @@ class TwitterMessage extends React.Component {
           type="text" 
           name="message" 
           id="message" 
+          value={this.state.message}
           onChange={event => this.handleMessageChange(event)}
         />
         {this.props.maxChars - this.state.message.length}
